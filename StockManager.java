@@ -41,6 +41,7 @@ public class StockManager
         
         if (!existingID) {
             stock.add(item);
+            System.out.println("Item Added Successfully!");
         }
         
         
@@ -69,18 +70,6 @@ public class StockManager
         
     }
     
-    /**
-     * Receive a delivery of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
-     * @param amount The amount to increase the quantity by.
-     */
-    
-    /**
-     * Try to find a product in the stock with the given id.
-     * @return The identified product, or null if there is none
-     *         with a matching ID.
-     */
     public Product findProduct(int id)
     {
         
@@ -177,15 +166,5 @@ public class StockManager
         
     }
     
-    /**
-     * Locate a product with the given ID, and return how
-     * many of this item are in stock. If the ID does not
-     * match any product, return zero.
-     * @param id The ID of the product.
-     * @return The quantity of the given product in stock.
-     */
 
-    /**
-     * Print details of all the products.
-     */
 }
